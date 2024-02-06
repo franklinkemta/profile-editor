@@ -1,27 +1,27 @@
-import { Button, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import React from "react";
-import Avatar from "../Avatar";
+import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { HomeIcon } from "@heroicons/react/24/solid";
 
-export default function Header() {
+interface HeaderProps {
+    title?: string
+}
+
+export default function Header({ title }: HeaderProps) {
     return (
-        <Navbar className="w-full items-center justify-between py-2 px-2">
-            <NavbarBrand>
-                <Avatar name={"Franklin Kemta"} />
-                <p className="font-semibold text-inherit "></p>
+        <Navbar className="w-full items-center justify-between py-2 px-2 print:hidden">
+            <NavbarBrand className="inline-flex gap-2">
+                <Link href="/" ><HomeIcon className="h-4 w-4 outline-2 border-black border rounded-lg" /></Link>
+                <p className="font-semibold text-inherit text-sm">{title}</p>
             </NavbarBrand>
             <NavbarContent className="gap-2" justify="end">
                 <NavbarItem className="text-midle-blue">
-                    <Link href="https://www.linkedin.com/in/franklinkemta" target="_blank">LinkedIn</Link>
+                    <Link href="/cv" >CV</Link>
                 </NavbarItem>
                 <NavbarItem >
-                    <Button as={Link} color="primary" href="https://github.com/franklinkemta" target="_blank" variant="flat">
-                        Github
-                    </Button>
+                    <Link href="/projects" >Projects</Link>
                 </NavbarItem>
                 <NavbarItem >
-                    <Button as={Link} color="primary" href="https://franklinkemta.notion.site/franklinkemta/Franklin-Kemta-3a3d2139337f4038b1ab9e8a7c3897fa" target="_blank" variant="flat">
-                        Notion
-                    </Button>
+                    <Link href="/blog" >Blog</Link>
                 </NavbarItem>
             </NavbarContent>
         </Navbar>

@@ -10,7 +10,7 @@ export default function Reveal({ placeholder, children }: RevealProps) {
     return (
         <>
             {
-                hidden ? <a onClick={() => setHidden(false)} href="#">
+                hidden ? <a onClick={() => setHidden(false)} href="#" className="underline print:hidden">
                     {placeholder ?? " reaveal "}
                 </a>
                     : <>{children}</>

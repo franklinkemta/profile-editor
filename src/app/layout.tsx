@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Franklin Kemta CV - [GEN]",
-  description: "cv-bartender uses AI mix a given job description at a target company with your given profile and expectations and gives you a ready to apply CV",
+  title: "profile editor - [WIP]",
+  description: "profile-editor, easy CV profile edition for all using AI",
 };
 
 export default function RootLayout({
