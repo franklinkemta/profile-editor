@@ -12,6 +12,7 @@ export default function Home() {
           <Divider />
           <div className="w-full flex justify-center">
             <h3>This app is actually being updated...</h3>
+            <a href="https://github.com/franklinkemta/profile-editor">Check project on Github</a>
           </div>
           <Divider />
         </div>
