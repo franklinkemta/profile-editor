@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Profile editor 📄🍻
 
-## Getting Started
+### Description
+profile-editor is a tool that help you draft a company specific CV profile for a job that you are applying for.
+Given a job description at a target company, the user actual CV profile and other details and expectations, then feed a LLM to draft a ready for application job matching resume.
 
-First, run the development server:
+Tired of manually adapting your CV profile for each employer and job application ? 
+If you are looking for an advanced copy-paste tool to simplify your job seeking journey, This is the tool for you !
+You just need to copy job description, the company description and input your profile details once, if not done yet. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+TODO:
+   - Build the profile Generator (Input form)
+     - Input the User profile, experience and expectation
+     - Input the Job description
+     - Input the Target company about
+   - Structure the rights prompts with ChatGPT for profile + job + company matching to get a draft application document
+   - Make sure GPT API can correctly process the draft document the generate the right output CV profile for the given draft
+   - Integrate GPT responses dynamically to current Frontend template
+   - Get a shareable and UID CV profile-job link for each generated CV profile, keeping the pre-prompting context (draft application document)
+   - Add ability to interact / chat with the generated CV profile on the generated CV profile-job link, by pre-prompting the context with the draft document and allowing GPT to answer question based on the user profil, experience and expectation
+   - More:  Generate a cover letter based on the draft application document

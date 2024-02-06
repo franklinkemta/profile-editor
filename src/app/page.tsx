@@ -1,112 +1,168 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import Section from "@/components/Section";
+import Line from "@/components/Line";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+import Reveal from "@/components/Reveal";
+
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="min-h-screen py-0 lg:px-60 text-xs print:px-0">
+      <div className="bg-white py-3 px-8 min-h-screen">
+        <Header />
+        <Section>
+          <div>
+            <p>
+              <Reveal placeholder="View phone number"><a className="text-midle-blue underline" href="tel:+14384674620">(438) 467 4620</a></Reveal> · <Reveal placeholder="View email"><a href="mailto:franklinkemta@gmail.com" className="underline">franklinkemta@gmail.com</a></Reveal> · <a className="underline" href="https://dev.franklinkemta.com" target="_blank">Website</a></p>
+            <p><a className="underline" href="https://maps.app.goo.gl/nM3aiCSLrQdv72y1A" target="_blank">(Montréal QC, Canada)</a> · French · English </p>
+          </div>
+        </Section>
+
+        <div className="flex flex-col justify-center">
+          <Section title="Profile" underlineTitle>
+            <div>
+              <h2 className="bold">Full-stack Developper · Backend Python - NodeJS -  Frontend React & Typescript</h2>
+              <h2 className="bold">Cloud Architect · AI/ML DevOps · Python - C# & Java Developer</h2>
+              <p className="pt-3 italic">
+                5 years of experience as a Full-stack developer and DevOps, Mastering of different frameworks to build production ready applications.
+                Strong technical background designing scalable architectures and coding production ready applications
+              </p>
+            </div>
+          </Section>
+          <Line />
+          <Section title="Key SKILLs">
+            <div>
+              <table className="text-xs">
+                <tbody>
+                  <tr>
+                    <td>Backend <b>Python</b>, <b>C#</b> and <b>Java</b></td>
+                    <td>Microservices <b>APIs</b> & Databases</td>
+                    <td><b>Intensive I/O</b> Applications & Debugging skill</td>
+                  </tr>
+                  <tr>
+                    <td>Frontend <b>React</b>/TS/TailwindCSS</td>
+                    <td><b>Cloud Deployment</b> / Monitoring</td>
+                    <td><b>IT Project Management</b> & <b>Lead</b>ership</td>
+                  </tr>
+                  <tr>
+                    <td><b>Docker</b> & Containers & <b>DevOps</b></td>
+                    <td>AI / ML / Vision <b>Pipeline</b> PyTorch</td>
+                    <td><b>Excellent</b> communication skills, French & English</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p className="pt-2">
+                I&apos;ve used various frameworks on different projects, it has provided me a serious advantage in building complex applications
+              </p>
+            </div>
+          </Section>
+          <Line />
+          <Section title="Experience">
+            <div>
+              <p>
+                <b className="text-hard-blue">Open to work</b> Now Looking for a new position, ability to sponsor myself for fast availability, serious!
+              </p>
+              <Experience
+                organizationName="Alithya Canada Inc"
+                organizationUrl="https://www.alithya.com"
+                role="Full-Stack Developer"
+                period="Sept 2023 - Jan 2024"
+              >
+                <div className="description">
+                  <p>
+                    - Relocated in Sept 2023 to Montreal for a Full-Stack developer role prior to a mandate, position not occupied after arrival
+                  </p>
+                  <p>
+                    - Communicated reasons in the meeting : expiry of mandate (supposedly June 2023), freeze of recent international hires
+                  </p>
+                </div>
+              </Experience>
+              <Experience
+                organizationName="Monk.ai · (Paris France)"
+                organizationUrl="https://monk.ai"
+                role="Full-Stack Developer"
+                period="Dec 2020 - Feb 2022"
+              >
+                <div className="description">
+                  <p>
+                    - Developed the MonkJs SDK, an open-source library for detecting and visualizing vehicle damage using AI inspection
+                  </p>
+                  <p>
+                    - 1st Member of the Frontend Team, Led the realization of the Monk&apos;s Legacy Mobile App at Nimbleways Morocco, and participated in new SDK development, managing product roadmaps, user stories, and technical specifications
+                  </p>
+                  <p>
+                    - Migrated application dependencies to proprietary databases and developed DataGuru, a dashboard for visualizing datasets/images for Monk&apos;s Data Scientists
+                  </p>
+                </div>
+              </Experience>
+              <Experience
+                organizationName="Buttertech · (Paris France)"
+                organizationUrl="https://buttertech.fr"
+                role="Full-Stack Developer - Lead Computer vision ML, DevOps & Analytics"
+                period="March 2018 - May 2020"
+              >
+                <div className="description">
+                  <p>
+                    - Led the development of Viize Traffic, a product that measures and classifies road traffic in real-time using vision analytics
+                  </p>
+                  <p>
+                    - Designed the software architecture for ingesting, storing, and processing video streams for computer vision pipelines
+                  </p>
+                  <p>
+                    - Implemented Camvas (Viize Traffic), a dashboard that displays multiples video streams and real-time camera processing results
+                  </p>
+                  <p>
+                    - 3 products built: a Custom smart capture device with GPU, a backend ML/APIs, a frontend SDK for monitoring and visualisation
+                  </p>
+                </div>
+              </Experience>
+            </div>
+          </Section>
+          <Line />
+          <Section title="Education">
+            <div>
+              <Education
+                organizationName="FST Settat : Hassan 1er University, Morocco"
+                organizationUrl="https://www.uh1.ac.ma"
+                role="Master's degree in Business Analytics and Big Data"
+                period="August 2021"
+              >
+                <div className="description">
+                  <p>
+                    Focus on Machine Learning / Statistics / Python & Java Big data frameworks / Hadoop / Kafka / Cloud architecture
+                  </p>
+                </div>
+              </Education>
+              <Education
+                organizationName="EURELEC : European Institute of Electronics and Computer Science, Casablanca, Morocco"
+                organizationUrl="https://www.efetmaroc.com"
+                role="Master's degree in IT Project Management - IT Project Manager "
+                period="August 2019"
+              >
+                <div className="description">
+                  <p>
+                    Focus on IT project management for Software developpement
+                  </p>
+                </div>
+              </Education>
+              <Education
+                organizationName="University of Yaoundé 1, Yaoundé, Cameroon"
+                organizationUrl="https://uy1.uninet.cm"
+                role="Bachelor's degree in Computer Science"
+                period="March 2018 - May 2020"
+              >
+                <div className="description">
+                  <p>
+                    Focus Software development & major in Information systems security
+                  </p>
+                </div>
+              </Education>
+            </div>
+          </Section>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
   );
