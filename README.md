@@ -4,9 +4,14 @@
 profile-editor is a tool that help you draft a company specific CV profile for a job that you are applying for.
 Given a job description at a target company, the user actual CV profile and other details and expectations, then feed a LLM to draft a ready for application job matching resume.
 
-Tired of manually adapting your CV profile for each employer and job application ? 
-If you are looking for an advanced copy-paste tool to simplify your job seeking journey, This is the tool for you !
-You just need to copy job description, the company description and input your profile details once, if not done yet. 
+### Important
+This is just a fun tool to play with LLM and showcase how usefull it can be. And you should clone this repo to update with your own information.
+
+### This should not lazy the process of making an employer specific job application
+You have to understand the roles requipes, the company culture and goals and your fit with the role you are applying, dont make HRs life harder XD
+
+### Usage: 
+You just need to copy job description, the company description and input your profile details once, if not done yet.
 
 TODO:
    - Build the profile Generator (Input form)
