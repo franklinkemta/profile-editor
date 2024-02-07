@@ -12,7 +12,7 @@ interface EducationProps {
 
 export default function Education({ organizationName, organizationUrl, role, period, children }: EducationProps) {
     return (
-        <section className="edu space-y-1">
+        <section className="edu space-y-1 mb-2 last:mb-0">
             {role && <h2 className="font-semibold">{role}</h2>}
             {children}
             <div className="flex justify-between">

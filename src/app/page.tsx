@@ -10,8 +10,10 @@ export default function Home() {
           <Avatar isBordered isFocusable radius="lg" color="primary" src="https://avatars.githubusercontent.com/u/17672563?v=4" className="w-20 h-20 text-large" />
           <h2 className="font-semibold text-lg">Franklin Kemta</h2>
           <Divider />
-          <div className="w-full flex justify-center">
-            <h3>This app is actually being updated...</h3>
+          <div className="w-full flex flex-col items-center justify-center">
+            <h3>Hi! am actually updating this application... <a href="https://github.com/franklinkemta/profile-editor" className="underline">Check project on Github</a></h3>
+            <br />
+            <a href="https://franklinkemta-2020.web.app" className="underline">Prev version here</a>
           </div>
           <Divider />
         </div>

@@ -30,6 +30,14 @@ body {
   }
 }
 
+.layout {
+  @apply min-h-screen py-0 lg:px-60 text-xs print:px-0
+}
+
+.page {
+  @apply bg-white py-3 px-3 lg:px-8 print:px-8 min-h-screen
+}
+
 .bold {
   @apply font-semibold
 }
@@ -42,7 +50,7 @@ table {
 
 td {
   border: 1px solid transparent;
-  padding: 0px 10px 7px 0px;
+  padding: 0px 3px 5px 0px;
   /* Add padding for internal spacing */
 }
 
