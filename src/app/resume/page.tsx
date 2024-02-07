@@ -6,16 +6,16 @@ import Experience from "@/components/cv/Experience";
 import Education from "@/components/cv/Education";
 import Reveal from "@/components/cv/Reveal";
 
-export default function CV() {
+export default function Resume() {
   return (
-    <main className="min-h-screen py-0 lg:px-60 text-xs print:px-0">
-      <div className="bg-white py-3 px-8 min-h-screen">
-        <Header title="Profile" />
+    <main className="layout">
+      <div className="page">
+        <Header title="Resume" />
         <About />
         <Section>
           <div>
             <p>
-              <Reveal placeholder="View phone number"><a className="text-midle-blue underline" href="tel:+14384674620">(438) 467 4620</a></Reveal> · <Reveal placeholder="View email"><a href="mailto:franklinkemta@gmail.com" className="underline">franklinkemta@gmail.com</a></Reveal> · <a className="underline" href="https://dev.franklinkemta.com" target="_blank">Website</a></p>
+              <Reveal placeholder="View phone number"><a className="text-midle-blue underline" href="tel:+14384674620">(438) 467 4620 ·</a></Reveal> <Reveal placeholder="View email"><a href="mailto:franklinkemta@gmail.com" className="underline">franklinkemta@gmail.com ·</a></Reveal> <a className="underline" href="https://dev.franklinkemta.com" target="_blank">Website</a></p>
             <p><a className="underline" href="https://maps.app.goo.gl/nM3aiCSLrQdv72y1A" target="_blank">(Montréal QC, Canada)</a> · French · English </p>
           </div>
         </Section>
@@ -23,11 +23,10 @@ export default function CV() {
         <div className="flex flex-col justify-center">
           <Section title="Profile" underlineTitle>
             <div>
-              <h2 className="bold">Full-stack Developper · Backend Python - NodeJS -  Frontend React & Typescript</h2>
-              <h2 className="bold">Cloud Architect · AI/ML DevOps · Python - C# & Java Developer</h2>
+              <h2 className="bold">Software Developer | Full-Stack | Cloud & Edge AI DevOps | Computer vision</h2>
               <p className="pt-3 italic">
-                5 years of experience as a Full-stack developer and DevOps, Mastering of different frameworks to build production ready applications.
-                Strong technical background designing scalable architectures and coding production ready applications
+                5 years of experience of Full-stack applications development paired with AI DevOps skills, Valuable experience designing and
+                deploying robust web, edge and cloud applications to production ready, great understanding of business and clients needs
               </p>
             </div>
           </Section>
@@ -37,45 +36,50 @@ export default function CV() {
               <table className="text-xs">
                 <tbody>
                   <tr>
-                    <td>Backend <b>Python</b>, <b>C#</b> and <b>Java</b></td>
-                    <td>Microservices <b>APIs</b> & Databases</td>
-                    <td><b>Intensive I/O</b> Applications & Debugging skill</td>
+                    <td>Backend <b>Python</b>, <b>C#</b> and <b>Node JS</b></td>
+                    <td><b>Microservices</b> & SQL databases</td>
+                    <td><b>Async I/O</b> APIs, queues, sockets, configs</td>
                   </tr>
                   <tr>
-                    <td>Frontend <b>React</b>/TS/TailwindCSS</td>
-                    <td><b>Cloud Deployment</b> / Monitoring</td>
-                    <td><b>IT Project Management</b> & <b>Lead</b>ership</td>
+                    <td>Frontend <b>React</b>/ Typescript</td>
+                    <td><b>CI/CD</b> deployment / monitoring</td>
+                    <td><b>Cloud</b> and <b>Edge</b> GCP/AWS development</td>
                   </tr>
                   <tr>
-                    <td><b>Docker</b> & Containers & <b>DevOps</b></td>
-                    <td>AI / ML / Vision <b>Pipeline</b> PyTorch</td>
-                    <td><b>Excellent</b> communication skills, French & English</td>
+                    <td><b>DevOps</b> ML / packaging / docker</td>
+                    <td>AI / ML / Vision <b>pipeline</b> PyTorch</td>
+                    <td><b>Fast onboarding</b>, <b>Agile</b> and <b>team</b> player</td>
                   </tr>
                 </tbody>
               </table>
-              <p className="pt-2">
-                I&apos;ve used various frameworks on different projects, it has provided me a serious advantage in building complex applications
-              </p>
             </div>
           </Section>
           <Line />
           <Section title="Experience">
             <div>
-              <p>
-                <b className="text-hard-blue">Open to work</b> Now Looking for a new position, ability to sponsor myself for fast availability, serious!
-              </p>
               <Experience
-                organizationName="Alithya Canada Inc"
-                organizationUrl="https://www.alithya.com"
-                role="Full-Stack Developer"
+                organizationName="Relocation"
                 period="Sept 2023 - Jan 2024"
+              >
+                <p className="text-hard-blue">
+                  Relocated by <b>Alithya Canada Inc</b> for a <b>Full Stack developer</b> position in <b>Montreal Quebec</b>
+                </p>
+              </Experience>
+              <Experience
+                organizationName="Freelance"
+                organizationUrl="#"
+                role="Co-Founder & CTO (startup)"
+                period="May 2022 - Sept 2023 "
               >
                 <div className="description">
                   <p>
-                    - Relocated in Sept 2023 to Montreal for a Full-Stack developer role prior to a mandate, position not occupied after arrival
+                    - Full-Stack development and IT project management services, Technical business decisions and clients needs
                   </p>
                   <p>
-                    - Communicated reasons in the meeting : expiry of mandate (supposedly June 2023), freeze of recent international hires
+                    - Structure and deliver Videos analytics systems using AI, Cloud and Edge processing, AI/ML Models DevOps CI/CD
+                  </p>
+                  <p>
+                    Dev stacks: Python / C#, JS, GCP, AWS, Server management, DevOps AI/ML, GPU, Nvidia Cuda Jetson, Multiprocessing
                   </p>
                 </div>
               </Experience>
@@ -87,13 +91,16 @@ export default function CV() {
               >
                 <div className="description">
                   <p>
-                    - Developed the MonkJs SDK, an open-source library for detecting and visualizing vehicle damage using AI inspection
+                    - Developed the <a target="_blank" href="https://github.com/monkvision/monkjs">MonkJs SDK</a>, an open-source library for detecting and visualizing vehicle damage using AI inspection
                   </p>
                   <p>
-                    - 1st Member of the Frontend Team, Led the realization of the Monk&apos;s Legacy Mobile App at Nimbleways Morocco, and participated in new SDK development, managing product roadmaps, user stories, and technical specifications
+                    - 1st Member of the Frontend Team, Led the realization of the Monk&apos;s Legacy Mobile App at Nimbleways Morocco, and participated in new <a target="_blank" href="https://monkvision.github.io/monkjs/">SDK development</a>, managing product roadmaps, user stories, and technical specifications
                   </p>
                   <p>
-                    - Migrated application dependencies to proprietary databases and developed DataGuru, a dashboard for visualizing datasets/images for Monk&apos;s Data Scientists
+                    - Backend migration of APIs dependencies from firebase (NoSQL) to Postgres SQL and Frontend development of DataGuru, a dashboard for visualizing datasets/images used by Monk&apos;s Data Scientists for models training
+                  </p>
+                  <p>
+                    Dev stacks: Typescript, React, React Native / Expo, Python, Flask, Poetry, SQL Alchemy, Docker, CircleCI, GCP
                   </p>
                 </div>
               </Experience>
@@ -114,7 +121,10 @@ export default function CV() {
                     - Implemented Camvas (Viize Traffic), a dashboard that displays multiples video streams and real-time camera processing results
                   </p>
                   <p>
-                    - 3 products built: a Custom smart capture device with GPU, a backend ML/APIs, a frontend SDK for monitoring and visualisation
+                    - 3 products deployed: Edge GPU capture device, a backend ML/APIs, a frontend SDK for monitoring and visualisation
+                  </p>
+                  <p>
+                    Dev stacks: Python, C++, FastAPI, PyTorch, Docker, ZeroMQ, FFMPEG, OpenCV, React / Typescript, Image processing
                   </p>
                 </div>
               </Experience>
@@ -131,7 +141,7 @@ export default function CV() {
               >
                 <div className="description">
                   <p>
-                    Focus on Machine Learning / Statistics / Python & Java Big data frameworks / Hadoop / Kafka / Cloud architecture
+                    Major in Machine Learning / Statistics / Python & Java Big data frameworks / Hadoop / Kafka / Cloud architecture
                   </p>
                 </div>
               </Education>
@@ -143,19 +153,19 @@ export default function CV() {
               >
                 <div className="description">
                   <p>
-                    Focus on IT project management for Software developpement
+                    Major on IT project management for Software developpement
                   </p>
                 </div>
               </Education>
               <Education
-                organizationName="University of Yaoundé 1, Yaoundé, Cameroon"
+                organizationName="University of Yaoundee 1, Cameroon"
                 organizationUrl="https://uy1.uninet.cm"
                 role="Bachelor's degree in Computer Science"
-                period="March 2018 - May 2020"
+                period="July 2017"
               >
                 <div className="description">
                   <p>
-                    Focus Software development & major in Information systems security
+                    Software development and major in Information systems security
                   </p>
                 </div>
               </Education>

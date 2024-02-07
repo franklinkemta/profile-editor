@@ -4,7 +4,7 @@ import Avatar from "../Avatar";
 
 export default function About() {
     return (
-        <Navbar className="w-full items-center justify-between py-2 px-2">
+        <Navbar className="w-full justify-between py-2 px-2">
             <NavbarBrand>
                 <Avatar name={"Franklin Kemta"} />
                 <p className="font-semibold text-inherit "></p>
