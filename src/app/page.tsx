@@ -11,7 +11,7 @@ export default function Home() {
           <h2 className="font-semibold text-lg">Franklin Kemta</h2>
           <Divider />
           <div className="w-full flex flex-col items-center justify-center">
-            <h3>Hi! am actually updating this application... <a href="https://github.com/franklinkemta/profile-editor" className="underline">Check project on Github</a></h3>
+            <h3>Hi! welcome on my profile <a href="https://github.com/franklinkemta/profile-editor" className="underline">Check this project on Github</a></h3>
             <br />
             <a href="https://franklinkemta-2020.web.app" className="underline">Prev version here</a>
           </div>
