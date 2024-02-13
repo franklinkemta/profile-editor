@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Franklin Kemta - Cover letter",
-    description: "",
+    title: "Franklin Kemta - Profile editor tool",
+    description: "Cover letter / cv enhancement using AI to apply for a job / position",
 };
 
 export default function RootLayout({
