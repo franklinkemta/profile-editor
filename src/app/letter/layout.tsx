@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Franklin Kemta - Cover letter",
-    description: "",
+    description: "Cover letter with enhancement option",
 };
 
 export default function RootLayout({

@@ -73,6 +73,8 @@ Let's collaborate and make the **Profile Editor** even better! 🚀
 6. Generate shareable, unique CV profile-job links while retaining pre-prompting context.
 7. Add features for precise CVs and cover letters based on specific job descriptions.
 8. Enable interaction/chat with the generated CV profile.
+9. Migrate static images to a CDN and use their url instead
+10. Make hard coded informations dynamic and stored in local session 
 
 ## License
 This project is licensed under the Apache License, Version 2.0. You can find the full text of the license in the LICENSE file.

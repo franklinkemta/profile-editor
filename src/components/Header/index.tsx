@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import { HomeIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 interface HeaderProps {
     title?: string
@@ -8,25 +8,25 @@ interface HeaderProps {
 
 export default function Header({ title }: HeaderProps) {
     return (
-        <Navbar className="w-full justify-between py-2 px-2 print:hidden">
-            <NavbarBrand className="inline-flex gap-2">
+        <div className="w-full flex flex-row flex-wrap justify-between py-2 px-2 print:hidden">
+            <div className="inline-flex gap-2 items-center">
                 <Link href="/" ><HomeIcon className="h-4 w-4 outline-2 border-black border rounded-lg" /></Link>
                 <p className="font-semibold text-inherit text-sm">{title}</p>
-            </NavbarBrand>
-            <NavbarContent className="gap-2" justify="end">
-                <NavbarItem className="text-low-blue">
-                    <Link href="/resume" ><span className="hidden lg:block">Resume/</span>CV</Link>
-                </NavbarItem>
-                <NavbarItem className="text-midle-blue">
-                    <Link href="/cover-letter" >· Cover Letter</Link>
-                </NavbarItem>
-                <NavbarItem >
+            </div>
+            <div className="flex flex-row flex-wrap gap-2 ml-auto">
+                <div className="text-low-blue inline-flex">
+                    <Link href="/resume" ><span className="hidden md:block">Resume</span><span className="md:hidden">CV</span></Link>
+                </div>
+                <div className="text-midle-blue">
+                    <Link href="/letter" >· Cover Letter</Link>
+                </div>
+                <div >
                     <Link href="/projects" className="text-hard-blue">· Projects</Link>
-                </NavbarItem>
-                <NavbarItem >
+                </div>
+                <div >
                     <Link href="/blog">· Blog</Link>
-                </NavbarItem>
-            </NavbarContent>
-        </Navbar>
+                </div>
+            </div>
+        </div>
     )
 };
