@@ -17,8 +17,8 @@ export default function Header({ title }: HeaderProps) {
                 <div className="text-low-blue inline-flex">
                     <Link href="/resume" ><span className="hidden md:block">Resume</span><span className="md:hidden">CV</span></Link>
                 </div>
-                <div className="text-midle-blue">
-                    <Link href="/letter" >· Cover Letter</Link>
+                <div className="text-middle-blue">
+                    <Link href="/letter" >· Open Letter</Link>
                 </div>
                 <div >
                     <Link href="/projects" className="text-hard-blue">· Projects</Link>
