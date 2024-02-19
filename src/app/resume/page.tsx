@@ -27,8 +27,8 @@ export default function Resume() {
           <div className="flex flex-col justify-center">
             <Section title="Profile" underlineTitle>
               <div className="justify-center text-center">
-                <h2 className="bold">Software Developer | Computer Vision | Cloud & Edge | ex Full-Stack</h2>
-                <p className="pt-3 italic">
+                <h2 className="text-middle-blue font-semibold">Software Developer | Computer Vision | Cloud & Edge | ex Full-Stack</h2>
+                <p className="pt-3 italic text-xs">
                   5 years of experience in Software Development, Computer Vision, Digital Simulation Hobbyist
                 </p>
               </div>
@@ -66,11 +66,11 @@ export default function Resume() {
             <Section title="Experience">
               <div>
                 <Experience
-                  organizationName="Relocation"
+                  organizationName="Alithya, Canada"
                   period="Sept 2023 - Jan 2024"
                 >
                   <p className="text-hard-blue">
-                    Relocated by <b>Alithya Canada Inc</b> for a <b>Full Stack developer</b> position in <b>Montreal Quebec</b>
+                    Relocated for a Full Stack developer position in Montreal Quebec
                   </p>
                 </Experience>
                 <Experience
