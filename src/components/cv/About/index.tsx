@@ -10,7 +10,7 @@ export default function About() {
                 <p className="font-semibold text-inherit "></p>
             </div>
             <div className="flex flex-row gap-2 ml-auto items-center">
-                <div className="text-midle-blue">
+                <div className="text-middle-blue">
                     <Link href="https://www.linkedin.com/in/franklinkemta" target="_blank">LinkedIn</Link>
                 </div>
                 <div >

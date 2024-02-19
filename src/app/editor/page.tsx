@@ -84,10 +84,10 @@ export default function Editor() {
     <NextUIProvider>
       <main className="layout">
         <div className="page">
-          <Header title="Edit / Enhance cover letter" />
+          <Header title="Create Cover Letter ✨✨" />
           <Divider />
-          <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2 justify-center py-3 text-sm">
-            <label className="underline font-semibold">
+          <form onSubmit={handleSubmit} className="w-full flex flex-col gap-2 justify-center py-3 text-sm pt-7">
+            <label className="">
               Job Title:
               <Input
                 type="text"
@@ -100,10 +100,10 @@ export default function Editor() {
                 color="primary"
               />
             </label>
-            <label className="underline font-semibold">
+            <label className="">
               Job Description:
               <Textarea
-                minRows={4}
+                minRows={2}
                 type="text"
                 name="jobDescription"
                 value={formData.jobDescription}
@@ -115,7 +115,7 @@ export default function Editor() {
                 color="primary"
               />
             </label>
-            <label className="underline font-semibold">
+            <label className="">
               Full Name:
               <Input
                 type="text"
@@ -129,10 +129,10 @@ export default function Editor() {
                 color="primary"
               />
             </label>
-            <label className="underline font-semibold">
+            <label className="">
               Resume / CV (Relevant Sections):
               <Textarea
-                minRows={4}
+                minRows={2}
                 type="text"
                 name="cvSections"
                 value={formData.cvSections}
@@ -144,10 +144,10 @@ export default function Editor() {
                 color="primary"
               />
             </label>
-            <label className="underline font-semibold">
-              Original Cover Letter (Optional):
+            <label className="">
+              Original Open Letter (Optional):
               <Textarea
-                minRows={4}
+                minRows={2}
                 type="text"
                 name="originalCoverLetter"
                 value={formData.originalCoverLetter}
@@ -160,7 +160,7 @@ export default function Editor() {
             </label>
 
             <div className="flex flex-col">
-              <label className="underline font-normal">
+              <label className="">
                 YOUR OPENAI API KEY
                 <Input
                   type="password"
@@ -198,7 +198,7 @@ export default function Editor() {
             <ModalContent>
               {(onClose) => (
                 <>
-                  <ModalHeader className="flex flex-row gap-1 font-semibold">
+                  <ModalHeader className="flex flex-row gap-1 font-normal">
                     <RocketLaunchIcon className="h-5 w-5" /> Enhanced cover letter
                   </ModalHeader>
                   <ModalBody className="p-2">

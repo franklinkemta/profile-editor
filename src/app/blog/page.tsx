@@ -1,5 +1,5 @@
 "use client"
-import { NextUIProvider } from "@nextui-org/react";
+import { Divider, NextUIProvider } from "@nextui-org/react";
 import Header from "@/components/Header";
 
 export default function Blog() {
@@ -8,6 +8,7 @@ export default function Blog() {
       <main className="layout">
         <div className="page">
           <Header title="Blog" />
+          <Divider className="print:hidden" />
           <div className="w-full flex flex-col items-center justify-center min-h-60 px-2 text-xl">
             <h2 className="text-3xl">🤓😄🏗</h2>
             <p className="py-3"> Blog will be updated soon </p>

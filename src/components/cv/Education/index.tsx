@@ -12,12 +12,12 @@ interface EducationProps {
 
 export default function Education({ organizationName, organizationUrl, role, period, children }: EducationProps) {
     return (
-        <section className="edu space-y-1 mb-2 last:mb-0">
-            {role && <h2 className="font-semibold">{role}</h2>}
+        <section className="edu space-y-1 mb-3 last:mb-0">
+            {role && <h2 className="text-middle-blue">{role}</h2>}
             {children}
             <div className="flex justify-between">
                 <p><a href={organizationUrl && "#"}>{organizationName}</a></p>
-                <p className="font-semibold">{period}</p>
+                <p className="text-sm">{period}</p>
             </div>
         </section>
     )
