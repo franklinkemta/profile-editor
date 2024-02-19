@@ -12,12 +12,12 @@ interface ExperienceProps {
 
 export default function Experience({ organizationName, organizationUrl, role, period, children }: ExperienceProps) {
     return (
-        <section className="exp space-y-1 mb-2 last:mb-0">
+        <section className="exp space-y-1 mb-4 last:mb-0">
             <div className="flex justify-between">
-                {organizationName && <p className="font-semibold"><a href={organizationUrl && "#"}>{organizationName}</a></p>}
-                {period && <p className="font-semibold ml-auto">{period}</p>}
+                {organizationName && <p className="underline"><a href={organizationUrl && "#"}>{organizationName}</a></p>}
+                {period && <p className="ml-auto text-sm">{period}</p>}
             </div>
-            {role && <h2 className="font-semibold">{role}</h2>}
+            {role && <h2 className="text-middle-blue">{role}</h2>}
             {children}
         </section>
     )
