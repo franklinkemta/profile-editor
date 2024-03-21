@@ -26,9 +26,6 @@ export default function Home() {
                     <ArrowUpRightIcon className="h-2 w-2" />
                   }>C#</Chip>
                   <Chip size="sm" color="warning" variant="dot" radius="sm">Typescript / React</Chip>
-                  <Chip size="sm" variant="light" radius="sm" startContent={
-                    <ArrowUpIcon className="h-2 w-2" />
-                  }>View resume</Chip>
                 </div>
               </div>
             </div>

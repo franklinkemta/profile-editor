@@ -18,46 +18,42 @@ export default function Resume() {
           <Section>
             <div>
               <p className="flex gap-1">
+                <a className="underline" href="https://maps.app.goo.gl/nM3aiCSLrQdv72y1A" target="_blank">Montreal QC, Canada ·</a>
                 <Reveal placeholder="View phone number"><a className="text-middle-blue underline" href="tel:+14384674620">(438) 467 4620 ·</a></Reveal>
-                <Reveal placeholder="View email"><a href="mailto:franklinkemta@gmail.com" className="underline">franklinkemta@gmail.com</a></Reveal></p>
-              <p><a className="underline" href="https://maps.app.goo.gl/nM3aiCSLrQdv72y1A" target="_blank">(Montreal QC, Canada)</a> · French · English </p>
+                <Reveal placeholder="View email"><a href="mailto:franklinkemta@gmail.com" className="underline">franklinkemta@gmail.com</a></Reveal> <span>· French · English</span></p>
             </div>
           </Section>
-
+          <Line />
           <div className="flex flex-col justify-center">
             <Section title="Profile" underlineTitle>
               <div className="justify-center text-center">
-                <h2 className="text-middle-blue font-semibold">Software Developer | Computer Vision | Cloud & Edge | ex Full-Stack</h2>
-                <p className="pt-3 italic text-xs">
-                  5 years of experience in Software Development, Computer Vision, Digital Simulation Hobbyist
-                </p>
+                <h2 className="text-middle-blue font-semibold">Software Developer | Full-Stack | Computer Vision | AI | DevOps | Cloud & Edge </h2>
               </div>
             </Section>
-            <Line />
-            <Section title="Key SKILLs">
+
+            <Section title="">
               <div>
                 <table className="text-xs">
                   <tbody>
                     <tr>
-                      <td>Mainly Python, C#, C++</td>
-                      <td>Javascript / Typescript (React)</td>
-                      <td>Plus (in Java, Rust and Go)</td>
+                      <td><b>• Over 5 years of experience</b> as a Full Stack Developer, AI and IT Project Management</td>
                     </tr>
                     <tr>
-                      <td>PyTorch, OpenCV, Numpy, FFmpeg</td>
-                      <td>YOLO, Detects, Tracks, Segs</td>
-                      <td>Features extraction, re-Captioning (LLMs)</td>
+                      <td><b>• Solid devOps skills</b> with Terraform, Ansible, Docker and Git on GCP and AWS,</td>
                     </tr>
                     <tr>
-                      <td>ZeroMQ, gRPC, Kafka, REST</td>
-                      <td>GraphQL, PostgresQL, MongoDB</td>
-                      <td>Websocket, Redis, ElasticSearch</td>
+                      <td><b>• Distributed solution architect</b> with APIs, REST, Sockets, ZeroMQ, Images, Real-time</td>
                     </tr>
                     <tr>
-                      <td>DevOps for AI/ML, CI/CD, Git</td>
-                      <td>Bash, Docker, Ansible, Terraform</td>
-                      <td>Cloud, GCP, AWS, Azure</td>
+                      <td><b>• AI/ML Lifecycle Manager,</b> LLMs, Airflow, DVC, ml flow, Cloud/GPU Inference</td>
                     </tr>
+                    <tr>
+                      <td><b>• Passionate</b> about Computer Vision, Digital Simulation, 3D/BIM, Cloud/Edge IoT</td>
+                    </tr>
+                    <tr>
+                      <td><b>• Program in Python, C#, C++, NodeJs, Typescript, React,</b> assets in Java, Rust and Go</td>
+                    </tr>
+
                   </tbody>
                 </table>
               </div>
@@ -67,6 +63,8 @@ export default function Resume() {
               <div>
                 <Experience
                   organizationName="Alithya, Canada"
+                  organizationUrl="https://alithya.com"
+                  role="Full-Stack Developer"
                   period="Sept 2023 - Jan 2024"
                 >
                   <p className="text-hard-blue">
@@ -74,48 +72,50 @@ export default function Resume() {
                   </p>
                 </Experience>
                 <Experience
-                  organizationName="Buttertech, Cameroon"
+                  organizationName="Buttertech, Paris France, (Remote, Cameroon)"
                   organizationUrl="https://buttertech.fr"
                   role="Technical Consultant - AI Integration"
                   period="May 2022 - Sept 2023"
                 >
                   <div className="description">
                     <p>
-                      • While transitioning to Montreal, I resolved customer issues with crashing computer vision pipelines, improving output video quality and real time latency
+                      • Implement the ML life cycle management infrastructure for Computer Vision AI models in a distributed architecture supporting multiple edge GPU devices, Migrate inference directly on the sensor, improve latency and quality of frames, reduce network load and GCP bill
                     </p>
                     <p>
-                      • Migrated computer vision pipelines to edge devices with GPU acceleration, enabling on-device feature extraction and improving video quality while reducing network load, cloud processing and architecture costs
+                      • Automate the deployment process and scalability on demand of production environments in GCP and the Custom Nvidia Jetson devices using Ansible, Terraform, Docker and Balena
                     </p>
                     <p>
-                      • Developed the MVP of an edge sensor-based pipeline combining video and LiDAR to measure the CO2 emission of the traffic data from their AI extracted features
+                      • Provide technical customer support on API usage and integration, optimize existing code
                     </p>
                     <p>
-                      Stack: Python, PyTorch, OpenCV, FFmpeg, GCP, AWS, PostgreSQL, NextJs, FastAPI, Docker CI/CD, Cuda GPU, Nvidia Containers, Embedded, Balena, Jetson, Lidar Detection and 3D Mapping
+                      • Add metadata extraction features for speed, duration, direction, CO2 emissions for traffic analysis, and design with RD the MVP architecture for sensor combining Lidar/GPU/Video
+                    </p>
+                    <p>
+                      Stacks: CI/CD, GCP, AWS, Terraform, Ansible, Airflow, MLflow, DVC, Nvidia Docker, Cuda GPU, Lidar
                     </p>
                   </div>
                 </Experience>
                 <Experience
                   organizationName="Monk.ai · (Paris France)"
                   organizationUrl="https://monk.ai"
-                  role="Full-Stack Developer  (Joined as first Frontend team member)"
+                  role="Full-Stack Developer (Joined as principal Frontend Member)"
                   period="Dec 2020 - Feb 2022"
                 >
                   <div className="description">
                     <p>
-                      • Developed the MonkApp MVP, a mobile interface that leverages computer vision backend services to <a target="_blank" href="https://github.com/monkvision/monkjs">assist</a> agents/clients in the car damage inspection process
+                      • Coordinate and develop the MonkApp MVP, their legacy mobile application allowing AI-assisted vehicle inspection, taking guided photos, displaying damages detected by the API in real time, allowing users to view, sign and export PDF analysis reports damage
                     </p>
                     <p>
-                      • Contributed to the design and development of the UX/UI open-source SDK <a target="_blank" href="https://monkvision.github.io/monkjs/">MonkJS</a>, focusing on functional aspects, backend integration, annotation and visualization
+                      • Design with a new team an open-source SDK for UX/UI <a target="_blank" href="https://monkvision.github.io/monkjs/">MonkJS</a>, code the functional aspect, backend integration, annotation modules and 360 visualization of damage
                     </p>
                     <p>
-                      • Worked with the data scientists and the delivery team to iterate on roadmap features, modified the backend for rapid integration of urgent features, e.g OCR, pdf generation
+                      • Iterate with data scientists and the delivery team on the feature roadmap and integrate urgent features required by the front end, e.g. OCR, PDF generation
                     </p>
                     <p>
-                      • Migrated the backend APIs using Firebase Cloud functions to Rest API and built a simple dashboard (Dataguru) to organize training images datasets
+                      • Migrate API code and data from Firebase Cloud functions (NodeJs) and Firestore to the new API, develop a dashboard named Dataguru for Image/Train datasets managements
                     </p>
                     <p>
-                      Stack: TypeScript, React, React Native, Expo, Jira, Users support, PDF Generation, Documents OCR,
-                      Python, Flask, REST, PostgreSQL, SQLAlchemy, Docker, CircleCI, GCP, Auth0, Git
+                      Stack: React, Mobile, TypeScript, NodeJs, Expo, Jira, PDF, OCR, Python, Flask, Postgres, CircleCI Python, Flask, REST, PostgreSQL, SQLAlchemy, Docker, CircleCI, GCP, Auth0, Git
                     </p>
                   </div>
                 </Experience>
@@ -127,19 +127,19 @@ export default function Resume() {
                 >
                   <div className="description">
                     <p>
-                      Led the development of the core video processing product for real-time traffic analysis using Computer Vision. This involved:
+                      Led the development of the core video processing product for real-time traffic analysis using Computer Vision. This involved
                     </p>
                     <p>
-                      • Designing and implementing the backend architecture, the database and the GPU video processing pipelines, enabling efficient ingestion, storage, and processing of frames from multiple video sources simultaneously, ensuring optimal models performance
+                      • In Backend: Code and architect vision model pipelines, transport of frames and metadata, concurrently use GPU to process frames from multiples video streams devices on GCP
                     </p>
                     <p>
-                      • Managing and implementing DevOps delivery strategy, including CI/CD pipelines for models and microservices, automating cloud builds and deployments
+                      • In DevOps: Set up the CI/CD stack for the deployment of Docker images on GCP, AWS and optimize the microservices cycle based on resource usage
                     </p>
                     <p>
-                      • Developing the Camvas frontend dashboard, a real-time visualization tool for video streams, processing results and Region of interest (ROI) annotation
+                      • In Frontend: Code the Viize Camvas dashboard to display video streams, history and analysis results in real time, manage sensors and annotate regions of interest (ROI)
                     </p>
                     <p>
-                      Stack: Python, FastAPI, PyTorch, ZeroMQ, FFMPEG, OpenCV, Websocket, image processing, NginX, Docker, GCP, Circle CI, Ansible, React, Next JS, Canvas, WebGL, Pixi JS, TailwindCss
+                      Stack: Python, FastAPI, PyTorch, ZeroMQ, FFMPEG, OpenCV, WebSocket, Images processing, NginX, Docker, Circle CI, Ansible, React, Next JS, Canvas, WebGL, Pixi JS, TailwindCss, NextJs
                     </p>
                   </div>
                 </Experience>

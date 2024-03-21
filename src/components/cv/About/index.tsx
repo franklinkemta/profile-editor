@@ -17,7 +17,7 @@ export default function About() {
                     <Link href="https://github.com/franklinkemta" target="_blank">Github</Link>
                 </div>
                 <div>
-                    <Link href="https://dev.franklinkemta.com" target="_blank">Website</Link>
+                    <Link href="https://dev.franklinkemta.com" target="_blank" className="hidden print:block">Website</Link>
                 </div>
             </div>
         </div>
