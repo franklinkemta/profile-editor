@@ -14,10 +14,10 @@ export default function Experience({ organizationName, organizationUrl, role, pe
     return (
         <section className="exp space-y-1 mb-4 last:mb-0">
             <div className="flex justify-between">
-                {organizationName && <p className="underline"><a href={organizationUrl && "#"}>{organizationName}</a></p>}
+                {role && <h2 className="text-middle-blue">{role}</h2>}
                 {period && <p className="ml-auto text-sm">{period}</p>}
             </div>
-            {role && <h2 className="text-middle-blue">{role}</h2>}
+            {organizationName && <p className="underline"><a href={organizationUrl ?? "#"} target="_blank">{organizationName}</a></p>}
             {children}
         </section>
     )

@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeIcon } from "@heroicons/react/24/solid";
+import { Squares2X2Icon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
 interface HeaderProps {
@@ -8,9 +8,9 @@ interface HeaderProps {
 
 export default function Header({ title }: HeaderProps) {
     return (
-        <div className="w-full flex flex-row flex-wrap justify-between py-2 px-2 print:hidden">
+        <div className="w-full flex flex-row flex-wrap justify-between py-2 px-2 z-50 sticky top-0 bg-white print:hidden">
             <div className="inline-flex gap-2 items-center">
-                <Link href="/" ><HomeIcon className="h-4 w-4 outline-2 border-black border rounded-lg" /></Link>
+                <Link href="/" ><Squares2X2Icon className="h-4 w-4 " /></Link>
                 <p className="font-semibold text-inherit text-sm">{title}</p>
             </div>
             <div className="flex flex-row flex-wrap gap-2 ml-auto">
@@ -18,7 +18,7 @@ export default function Header({ title }: HeaderProps) {
                     <Link href="/resume" ><span className="hidden md:block">Resume</span><span className="md:hidden">CV</span></Link>
                 </div>
                 <div className="text-middle-blue">
-                    <Link href="/letter" >· Open Letter</Link>
+                    <Link href="/letter" >· About</Link>
                 </div>
                 <div >
                     <Link href="/projects" className="text-hard-blue">· Projects</Link>

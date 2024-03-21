@@ -145,7 +145,7 @@ export default function Editor() {
               />
             </label>
             <label className="">
-              Original Open Letter (Optional):
+              Original About (Optional):
               <Textarea
                 minRows={2}
                 type="text"
