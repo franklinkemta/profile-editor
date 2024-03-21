@@ -46,10 +46,10 @@ export function generateCoverLetterPrompt(formData: ProfileData): string {
     *Candidate's CV (Relevant Sections):
     ${formData.cvSections}
 
-    *Original Open Letter:
+    *Original Letter:
     ${formData.originalCoverLetter}
 
-    *Revised Open Letter:
+    *Revised Letter:
     {{revised_cover_letter}}
 
     *Output Format (JSON):
@@ -155,7 +155,7 @@ Implemented Camvas (Viize Traffic), a dashboard that displays multiples video st
 3 products deployed: Edge GPU capture device, a backend ML/APIs, a frontend SDK for monitoring and visualisation
 Dev stacks: Python, FastAPI, PyTorch, Docker, ZeroMQ, FFMPEG, OpenCV, React / Typescript, Image processing
 
-*Original Open Letter:
+*Original Letter:
 Greetings! My name is Albert Dylan,
 
 Am a Software Developer with 5 years of experience in Full-Stack development, with solid DevOps skills.
@@ -186,7 +186,7 @@ I would love to work on your exciting project.
 Feel free to reach out!
 Regards
 
-*Revised Open Letter:
+*Revised Letter:
 {{revised_cover_letter}}
 
 *Output Format (JSON):

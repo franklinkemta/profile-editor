@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
+
 import "@/app/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Lato({
+    subsets: ['latin'],  // Include the necessary character subsets
+    display: "auto",    // Ensure text is visible while font loads
+    weight: ['300', '400', '700']
+});
 
 export const metadata: Metadata = {
-    title: "Franklin Kemta - CV [GEN]",
+    title: "Franklin Kemta - CV [DEV]",
     description: "",
 };
 
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body className={font.className}>{children}</body>
         </html>
     );
 }

@@ -7,7 +7,7 @@ interface AskProps {
 export default function Ask({ }: AskProps) {
     return (
         <div id="askElement" className="w-full flex flex-col bg-gray-100 gap-2">
-            <div className="min-h-20 text-sm p-1">
+            <div className="text-sm p-1">
 
             </div>
             <div className="flex items-center justify-center">
