@@ -31,10 +31,10 @@ export default function OpenLetter() {
             <p className="">
               ☕️ Welcome, Hello bonjour ! It&apos;s Franklin 👋🏼 <br /><br />
 
-              I&apos;m a Senior Full Stack Developer, here is my profile <br /> <br />
+              I&apos;m a Senior Full Stack and Devops Developer <br /> <br />
 
               In few points: <br />
-              ● Over 5 years of experience as a Full Stack Developer, AI and IT Project Management <br />
+              ● Almost 6 years of experience as a Full Stack Developer, AI and IT Project Management <br />
               ● Solid devOps skills with Terraform, Ansible, Docker and Git on GCP and AWS, <br />
               ● Distributed solution architect with APIs, REST, Sockets, ZeroMQ, Images, Real-time <br />
               ● AI/ML Lifecycle Manager, LLMs, Airflow, DVC, ml flow, Cloud/GPU Inference <br />

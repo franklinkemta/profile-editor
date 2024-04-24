@@ -20,11 +20,11 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2 px-0">
                   <Chip size="sm" color="default" variant="light">Best:</Chip>
                   <Chip className="text-3xl" size="sm" color="default" variant="flat">☕️</Chip>
-                  <Chip size="sm" color="primary" variant="dot">Python</Chip>
                   <Chip size="sm" color="secondary" variant="dot">C++</Chip>
                   <Chip size="sm" color="warning" variant="dot" radius="lg" startContent={
                     <ArrowUpRightIcon className="h-2 w-2" />
-                  }>C#</Chip>
+                  }>Java</Chip>
+                  <Chip size="sm" color="primary" variant="dot">Python</Chip>
                   <Chip size="sm" color="warning" variant="dot" radius="sm">Typescript / React</Chip>
                 </div>
               </div>

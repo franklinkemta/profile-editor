@@ -14,11 +14,11 @@ export default function Header({ title }: HeaderProps) {
                 <p className="font-semibold text-inherit text-sm">{title}</p>
             </div>
             <div className="flex flex-row flex-wrap gap-2 ml-auto">
-                <div className="text-low-blue inline-flex">
+                <div className="text-low-blue _inline-flex hidden">
                     <Link href="/resume" ><span className="hidden md:block">Resume</span><span className="md:hidden">CV</span></Link>
                 </div>
                 <div className="text-middle-blue">
-                    <Link href="/letter" >· About</Link>
+                    <Link href="/letter" >About</Link>
                 </div>
                 <div >
                     <Link href="/projects" className="text-hard-blue">· Projects</Link>
