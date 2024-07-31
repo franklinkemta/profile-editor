@@ -23,7 +23,7 @@ export default function Home() {
                   <Chip size="sm" color="secondary" variant="dot">C++</Chip>
                   <Chip size="sm" color="warning" variant="dot" radius="lg" startContent={
                     <ArrowUpRightIcon className="h-2 w-2" />
-                  }>Java</Chip>
+                  }>Go</Chip>
                   <Chip size="sm" color="primary" variant="dot">Python</Chip>
                   <Chip size="sm" color="warning" variant="dot" radius="sm">Typescript / React</Chip>
                 </div>
