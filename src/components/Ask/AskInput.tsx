@@ -27,7 +27,7 @@ export default function App() {
                         "!cursor-text",
                     ],
                 }}
-                placeholder="Ask anything..."
+                placeholder="Chat with me..."
                 startContent={
                     <ChatBubbleLeftRightIcon className="h-4 w-4 text-slate-400 mb-0.5  pointer-events-none flex-shrink-0" />
                 }
