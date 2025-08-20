@@ -31,7 +31,7 @@ export default function OpenLetter() {
             <p className="">
               ☕️ Welcome, Hello bonjour ! It&apos;s Franklin 👋🏼 <br /><br />
 
-              I&apos;m a Senior Full Stack and Devops Developer <br /> <br />
+              I&apos;m a Senior Cloud Developer - Full Stack, AI DevOps <br /> <br />
 
               In few points: <br />
               ● Almost 6 years of experience as a Full Stack Developer, AI and IT Project Management <br />

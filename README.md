@@ -77,5 +77,9 @@ Let's collaborate and make the **Profile Editor** even better! 🚀
 10. Make hard coded informations dynamic and stored in local session
 11. Add richer video presentation for project component to better describe experience, use Wistia, check roboflow
 
+## Screenshot
+![image](./public/images/screenshot.png)
+
+
 ## License
 This project is licensed under the Apache License, Version 2.0. You can find the full text of the license in the LICENSE file.
